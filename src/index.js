@@ -17,8 +17,6 @@ root.render(
       <Route path="/register" element={<Register />} />
       <Route path="/forgot" element={<ForgotPass />} />
       <Route path="/new" element={<NewPost />} />
-
-
     </Routes>
   </BrowserRouter>
 );

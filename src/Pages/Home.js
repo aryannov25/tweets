@@ -6,15 +6,13 @@ import { Auth } from "../firebase-config";
 import { useState, useEffect } from "react";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import Tweets from "./Tweets";
-import moment from 'moment';
-
+import moment from "moment";
 
 function Home() {
   const [user, setUser] = useState({});
   const [tweet, setTweet] = useState({});
   const [value, setValue] = useState({});
   const [meetings, setMeetings] = useState([]);
-
 
   const navigate = useNavigate();
   const tweetInputRef = useRef();
@@ -28,7 +26,7 @@ function Home() {
 
   useEffect(() => {
     fetch("https://fir-auth-5ce51-default-rtdb.firebaseio.com/meetings.json")
-      .then(response => response.json())
+      .then((response) => response.json())
       .then((data) => {
         const meetings = [];
         for (const key in data) {
@@ -67,15 +65,9 @@ function Home() {
             <p>No Tweets available!!</p>
           </div>
 
-
-{
-  meetings.map (meetings =>{
-    return <Tweets  tweets={meetings.tweet}  />
-  }
-)}
-          
-
-         
+          {meetings.map((meetings) => {
+            return <Tweets tweets={meetings.tweet} name={user.email} />;
+          })}
         </div>
       </div>
     </div>
