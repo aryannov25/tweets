@@ -15,7 +15,7 @@ function Tweets({ tweets, name }) {
         </div>
         <div class="  pl-3 pt-3">
           <div class="text-xs text-grey-dark"></div>
-          <div class="flex justify-between">
+          <div class=" ">
             <div>
               <span class="font-bold">
                 <a href="/" class="text-white">
@@ -27,23 +27,22 @@ function Tweets({ tweets, name }) {
           <div>
             <div class="mb-4">
               <p class="mb-6">5 mins ago ・ Edited</p>
-              <div class="flex dark:bg-zinc-600 rounded p-3 mr-4">
-                <div class="mb-3 w-96 py-2">
+              <div class=" dark:bg-zinc-600 rounded p-3 mr-4">
+                <div class="flex mb-3 w-96 py-2">
                   <img
                     class="inline-block h-8 w-8 rounded-full"
                     src="https://emoji-uc.akamaized.net/orig/32/e70ddf12ec8dc727eb8c1e6f4a31dc.png"
                     alt=""
                   />
-                </div>
-                <div class="flex px-2 pt-2 ">
-                  <p
-                    class=" bg-transparent text-gray-400 font-medium text-sm "
-                    rows="2"
-                    cols="50"
+                    <div class=" ">
+                <p
+                    class="mr-2 flex bg-transparent text-black font-medium text-sm "
                   >
                     "{tweets}"
                   </p>
                 </div>
+                </div>
+                
               </div>
               <a href="/">
                 <h4 class="text-gray-400 ml-2 mt-1"> 💬 24 Comments</h4>

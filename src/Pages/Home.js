@@ -57,7 +57,12 @@ function Home() {
           </div>
 
           <div className={loading ? "loading" : "d-none"}>
-            <div className="loading-animation">loading...</div>
+          {Array(10)
+        .fill("")
+        .map((e, index) => (
+          <div className="loading-animation">loading...</div>
+        ))}
+            
           </div>
           <div
             className={tweet.length === 0 ? "container text-center" : "d-none"}
