@@ -57,7 +57,7 @@ function Home() {
           </div>
 
           <div className={loading ? "loading" : "d-none"}>
-          {Array(10)
+          {Array(1)
         .fill("")
         .map((e, index) => (
           <div className="loading-animation">loading...</div>
