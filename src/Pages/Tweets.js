@@ -3,7 +3,7 @@ import React from "react";
 function Tweets({ tweets, name }) {
   return (
     <div className="grid grid-cols-3 gap-4 content-start">
-      <div className=" bg-zinc-800 rounded mt-3 w-96 pl-3 mr-3 containerr" >
+      <div className=" bg-zinc-800 rounded mt-3 w-96 pl-3 mr-3 containerr">
         <div className="">
           <a href="/">
             <img
@@ -34,15 +34,12 @@ function Tweets({ tweets, name }) {
                     src="https://emoji-uc.akamaized.net/orig/32/e70ddf12ec8dc727eb8c1e6f4a31dc.png"
                     alt=""
                   />
-                    <div className=" ">
-                <p
-                    className="mr-2 mt-2 pl-5 tweet bg-transparent text-black font-medium text-sm "
-                  >
-                    "{tweets}"
-                  </p>
+                  <div className=" ">
+                    <p className="mr-2 mt-2 pl-5 tweet bg-transparent text-black font-medium text-sm ">
+                      "{tweets}"
+                    </p>
+                  </div>
                 </div>
-                </div>
-                
               </div>
               <a href="/">
                 <h4 className="text-gray-400 ml-2 mt-1"> 💬 24 Comments</h4>
@@ -51,7 +48,6 @@ function Tweets({ tweets, name }) {
           </div>
         </div>
       </div>
-
     </div>
   );
 }

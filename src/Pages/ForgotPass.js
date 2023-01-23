@@ -18,10 +18,10 @@ function App() {
     try {
       await sendPasswordResetEmail(Auth, email);
       setSuccess("Password reset email sent");
-      alert ("Password reset email sent")
+      alert("Password reset email sent");
     } catch (error) {
       setError(error.message);
-      alert(error.message)
+      alert(error.message);
     }
   }
 
