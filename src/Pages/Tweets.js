@@ -36,7 +36,7 @@ function Tweets({ tweets, name }) {
                   />
                     <div className=" ">
                 <p
-                    className="mr-2 mt-2 pl-5 tweet bg-transparent text-black font-medium text-sm "
+                    className="mr-2 mt-2 pl-5 bg-transparent text-black font-medium text-sm "
                   >
                     "{tweets}"
                   </p>
