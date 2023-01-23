@@ -1,6 +1,8 @@
-
-
+.bg{
+  background-color: black;
+}
 .container1 {
+  background-color: black;
   margin: 0 6%;
   width: auto;
   height: 873px;

@@ -1,4 +1,4 @@
-import { React, useRef } from "react";
+import React, { useRef, lazy } from "react";
 import { useNavigate } from "react-router-dom";
 import "../App.css";
 import Nav from "./Navbar";
@@ -7,6 +7,14 @@ import { useState, useEffect } from "react";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import Tweets from "./Tweets";
 import moment from "moment";
+import useOnline from "./useOnline";
+
+// const Tweets = lazy(() => import("./Tweets"));
+
+// const isOnline = useOnline();
+// if (!isOnline) {
+//   return <h1>🔴 Offline, please check your internet connection!!</h1>;
+// }
 
 function Home() {
   const [user, setUser] = useState({});
@@ -57,22 +65,24 @@ function Home() {
           </div>
 
           <div className={loading ? "loading" : "d-none"}>
-          {Array(1)
-        .fill("")
-        .map((e, index) => (
-          <div className="loading-animation">loading...</div>
-        ))}
-            
+            {Array(1)
+              .fill("")
+              .map((e, index) => (
+                <div className="loading-animation">loading...</div>
+              ))}
           </div>
           <div
-            className={tweet.length === 0 ? "container text-center" : "d-none"}
+            className={
+              tweet.length === 0 ? "container text-center flex" : "d-none"
+            }
           >
             <p>No Tweets available!!</p>
           </div>
-
-          {meetings.map((meetings) => {
-            return <Tweets tweets={meetings.tweet} name={user.email} />;
-          })}
+          <div className="grid grid-cols-1 p-2">
+            {meetings.map((meetings) => {
+              return <Tweets tweets={meetings.tweet} name={user.email} />;
+            })}
+          </div>
         </div>
       </div>
     </div>
