@@ -19,43 +19,36 @@ function App() {
 
   const [show, setShow] = useState(true);
 
-
   useEffect(() => {
     onAuthStateChanged(Auth, (currentUser) => {
       setUser(currentUser);
     });
   }, []);
 
-
   async function handleSubmit(e) {
     e.preventDefault();
-     
+
     try {
-      
       await createUserWithEmailAndPassword(
         Auth,
         registerEmail,
         registerPassword,
         userName
       );
-      
+
       navigate("/home");
     } catch (error) {
       setError(error.message);
       alert(error.message);
-
-      
     }
     navigate("/register");
-
-
   }
 
   return (
     <div>
       <section className="flex justify-center items-center h-screen bg-gray-100 dark:bg-black ">
         <div className="border-2 max-w-md w-full bg-white rounded p-6 space-y-4 dark:bg-gray-900 dark:text-white">
-        {error && (
+          {error && (
             <Alert
               show={show}
               dismissible={{
