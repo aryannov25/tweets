@@ -1,6 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Tweets({ tweets, name }) {
+  const navigate = useNavigate();
+
+  const [meetings, setMeetings] = useState([]);
+
+  const deletDoc = (key) => {
+    meetings.tweet
+      .delete()
+      .then(() => {
+        navigate("/home", { replace: true });
+      })
+      .catch(() => {
+        alert("Something went wrong");
+      });
+  };
+
   return (
     <div className="grid grid-cols-3 gap-4 content-start">
       <div className=" bg-zinc-800 rounded mt-3 w-96 pl-3 mr-3 containerr">
@@ -45,6 +61,13 @@ function Tweets({ tweets, name }) {
                 <h4 className="text-gray-400 ml-2 mt-1"> 💬 24 Comments</h4>
               </a>
             </div>
+            <button
+              onClick={() => {
+                deletDoc(meetings.key);
+              }}
+            >
+              Delete
+            </button>{" "}
           </div>
         </div>
       </div>

@@ -41,6 +41,10 @@ function Home() {
     });
   }
 
+
+  
+
+
   return (
     <div className="bg">
       <Nav />

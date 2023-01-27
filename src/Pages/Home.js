@@ -26,6 +26,7 @@ function Home() {
   const tweetInputRef = useRef();
   const [loading, setLoading] = useState(true);
 
+  
   useEffect(() => {
     onAuthStateChanged(Auth, (currentUser) => {
       setUser(currentUser);
