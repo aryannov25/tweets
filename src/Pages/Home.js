@@ -26,7 +26,6 @@ function Home() {
   const tweetInputRef = useRef();
   const [loading, setLoading] = useState(true);
 
-  
   useEffect(() => {
     onAuthStateChanged(Auth, (currentUser) => {
       setUser(currentUser);
@@ -79,7 +78,8 @@ function Home() {
           >
             <p>No Tweets available!!</p>
           </div>
-          <div className="grid grid-cols-1 p-2">
+          
+          <div className="grid grid-cols-1 p-2 ">
             {meetings.map((meetings) => {
               return <Tweets tweets={meetings.tweet} name={user.email} />;
             })}
