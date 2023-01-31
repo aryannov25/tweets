@@ -79,7 +79,7 @@ function Home() {
             <p>No Tweets available!!</p>
           </div>
           
-          <div className="grid grid-cols-1 p-2 ">
+          <div className="grid container p-2 ">
             {meetings.map((meetings) => {
               return <Tweets tweets={meetings.tweet} name={user.email} />;
             })}
