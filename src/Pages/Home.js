@@ -26,6 +26,7 @@ function Home() {
   const tweetInputRef = useRef();
   const [loading, setLoading] = useState(true);
 
+
   useEffect(() => {
     onAuthStateChanged(Auth, (currentUser) => {
       setUser(currentUser);
@@ -42,7 +43,7 @@ function Home() {
           meetings.push(meeting);
         }
         setMeetings(meetings);
-        console.log(meetings);
+        console.log(meetings.toUpperCase());
         setLoading(false);
       });
   }, []);
@@ -81,7 +82,8 @@ function Home() {
           
           <div className="grid container p-2 ">
             {meetings.map((meetings) => {
-              return <Tweets tweets={meetings.tweet} name={user.email} />;
+              return <Tweets tweets={meetings.tweet} name={user.email}
+               />;
             })}
           </div>
         </div>
