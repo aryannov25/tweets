@@ -42,7 +42,8 @@ function Home() {
           meetings.push(meeting);
         }
         setMeetings(meetings);
-        console.log(meetings.toUpperCase());
+        const abc = meetings.toUppercase()
+        console.log(abc);
         setLoading(false);
       });
   }, []);
