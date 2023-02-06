@@ -42,7 +42,7 @@ function Home() {
           meetings.push(meeting);
         }
         setMeetings(meetings);
-        const abc = meetings.toUppercase()
+        const abc = meetings.toUppercase();
         console.log(abc);
         setLoading(false);
       });

@@ -73,7 +73,7 @@ function Tweets({ tweets, name }) {
     //   </div>
     // </div>
 
-    <div className="bg-zinc-800 rounded mt-3 w-full p-1 mr-3 sm:content-left container">
+    <div className="bg-zinc-800 rounded mt-3 p-1 mr-3 sm:content-left container">
       <div className="p-4 bg-zinc-800">
         <div className="media bg-zinc-800 flex pb-1">
           <a className="mr-4 bg-zinc-800" href="#">
