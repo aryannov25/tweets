@@ -40,14 +40,14 @@ function Nav() {
         </Typography>
 
         <span>
-          <a href="new">
+          <a href="/new">
             <button className="bg-blue-400 hover:bg-blue-500 rounded-full text-white font-bold py-2 px-4 mr-6 ">
               New Post
             </button>
           </a>
           <button
             onClick={logout}
-            className="bg-blue-400 hover:bg-blue-500 rounded-full text-white font-bold py-2 px-4   float-right"
+            className="bg-blue-400 hover:bg-blue-500 rounded-full text-white font-bold py-2 px-4 float-right"
           >
             Sign Out
           </button>
