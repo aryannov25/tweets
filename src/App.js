@@ -22,7 +22,7 @@ function App() {
   return (
     <div>
       <section className="flex justify-center items-center h-screen bg-black ">
-        <div className="border-2 max-w-md w-full bg-white rounded p-6 space-y-4 bg-gray-900 text-white">
+        <div className="border-2 max-w-md w-full  rounded p-6 space-y-4 bg-gray-900 text-white">
           {error && (
             <div
               class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative"
@@ -69,7 +69,7 @@ function App() {
                 <label className="block mb-1 bg-gray-900">Password</label>
 
                 <a
-                  href="/forgot"
+                  href="forgot"
                   className="text-sm text-blue-600 hover:underline bg-gray-900"
                 >
                   Forgot password?
@@ -96,7 +96,7 @@ function App() {
             <div className="flex items-center justify-between mt-2 bg-gray-900">
               <p className="text-gray-600 bg-gray-900">
                 Not registered yet? &nbsp;
-                <a href="/register" className="text-white bg-gray-900">
+                <a href="register" className="text-white bg-gray-900">
                   Register &#129062;
                 </a>
               </p>
