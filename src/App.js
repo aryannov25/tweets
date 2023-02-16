@@ -68,12 +68,12 @@ function App() {
               <div className="flex justify-between bg-gray-900 mt-3">
                 <label className="block mb-1 bg-gray-900">Password</label>
 
-                <a
-                  href="/forgot"
+                <Link
+                  to="/forgot"
                   className="text-sm text-blue-600 hover:underline bg-gray-900"
                 >
                   Forgot password?
-                </a>
+                </Link>
               </div>
               <input
                 type="password"
