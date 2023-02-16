@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "../App.css";
 import "../index.css";
 import { useState } from "react";
@@ -99,9 +99,9 @@ function App() {
             <div className="flex items-center bg-gray-900 justify-between mt-2">
               <p className="text-gray-600 bg-gray-900">
                 Not registered yet? &nbsp;
-                <a href="/register" className="text-white bg-gray-900">
+                <Link to="/register" className="text-white bg-gray-900">
                   Register &#129062;
-                </a>
+                </Link>
               </p>
             </div>
           </form>
