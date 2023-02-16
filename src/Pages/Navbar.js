@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,Link } from "react-router-dom";
 import "../App.css";
 import {
   Navbar,
@@ -40,11 +40,11 @@ function Nav() {
         </Typography>
 
         <span>
-          <a href="/new">
+          <Link to="/new">
             <button className="bg-blue-400 hover:bg-blue-500 rounded-full text-white font-bold py-2 px-4 mr-6 ">
               New Post
             </button>
-          </a>
+          </Link>
           <button
             onClick={logout}
             className="bg-blue-400 hover:bg-blue-500 rounded-full text-white font-bold py-2 px-4 float-right"
