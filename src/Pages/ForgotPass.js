@@ -71,14 +71,14 @@ function App() {
             </span>
           </div>
           )} */}
-          <div className="mb-4 text-center">
-            <p className="text-gray-600">WELCOME </p>
+          <div className="mb-4 text-center bg-gray-900">
+            <p className="text-gray-600 bg-gray-900">WELCOME </p>
 
-            <h2 className="text-lg font-bold">Forgot Password</h2>
+            <h2 className="text-lg font-bold bg-gray-900">Forgot Password</h2>
           </div>
-          <form onSubmit={triggerResetEmail} className="mt-10 ">
+          <form onSubmit={triggerResetEmail} className="mt-10 bg-gray-900 ">
             <div>
-              <label className="block mb-1">Email </label>
+              <label className="block mb-1 bg-gray-900">Email </label>
               <input
                 className="dark:bg-gray-900 dark:text-white w-full p-4 text-sm bg-gray-50 focus:outline-none border border-gray-200 rounded text-gray-600"
                 type="text"
@@ -88,18 +88,18 @@ function App() {
               />
             </div>
 
-            <div className="mt-3">
+            <div className="mt-3 bg-gray-900">
               <button
                 type="submit"
-                className="w-full py-4 bg-blue-600 hover:bg-blue-700 rounded text-sm font-bold text-gray-50 transition duration-100"
+                className="w-full py-4  bg-blue-600 hover:bg-blue-700 rounded text-sm font-bold text-gray-50 transition duration-100"
               >
                 Reset Password
               </button>
             </div>
-            <div className="flex items-center justify-between mt-2">
-              <p className="text-gray-600">
+            <div className="flex items-center bg-gray-900 justify-between mt-2">
+              <p className="text-gray-600 bg-gray-900">
                 Not registered yet? &nbsp;
-                <a href="/register" className="text-white">
+                <a href="/register" className="text-white bg-gray-900">
                   Register &#129062;
                 </a>
               </p>

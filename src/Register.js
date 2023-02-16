@@ -60,16 +60,16 @@ function App() {
             </Alert>
           )}
 
-          <h1 className="text-white text-center">WELCOME</h1>
+          <h1 className="text-white bg-gray-900 text-center">WELCOME</h1>
 
           <div className="mb-4 text-center">
-            <h2 className="text-lg font-bold">Sign Up</h2>
+            <h2 className="text-lg font-bold bg-gray-900">Sign Up</h2>
           </div>
-          <form onSubmit={handleSubmit} className="mt-10 ">
+          <form onSubmit={handleSubmit} className="mt-10 bg-gray-900">
             <div>
-              <label className="block mb-1">Username</label>
+              <label className="block mb-1 bg-gray-900">Username</label>
               <input
-                className="dark:bg-gray-900 dark:text-white w-full p-4 text-sm bg-gray-50 focus:outline-none border border-gray-200 rounded text-gray-600"
+                className="dark:bg-gray-900  dark:text-white w-full p-4 text-sm bg-gray-50 focus:outline-none border border-gray-200 rounded text-gray-600"
                 type="text"
                 placeholder="Enter your username"
                 required
@@ -78,8 +78,8 @@ function App() {
                 }}
               />
             </div>
-            <div className="mt-3">
-              <label className="block mb-1">Email</label>
+            <div className="mt-3 bg-gray-900">
+              <label className="block mb-1  bg-gray-900">Email</label>
               <input
                 className="dark:bg-gray-900 dark:text-white w-full p-4 text-sm bg-gray-50 focus:outline-none border border-gray-200 rounded text-gray-600"
                 type="text"
@@ -91,8 +91,8 @@ function App() {
               />
             </div>
             <div>
-              <div className="flex justify-between mt-3">
-                <label className="block mb-1 ">Password</label>
+              <div className="flex justify-between mt-3 bg-gray-900">
+                <label className="block mb-1 bg-gray-900">Password</label>
               </div>
               <input
                 type="password"
@@ -112,10 +112,10 @@ function App() {
                 Register
               </button>
             </div>
-            <div className="flex items-center justify-between mt-2">
-              <p className="text-gray-600">
+            <div className=" bg-gray-900 flex items-center justify-between mt-2">
+              <p className="text-gray-600 bg-gray-900">
                 Already have a account?{" "}
-                <a href="/" className="text-white">
+                <a href="/" className="text-white bg-gray-900">
                   Login &#129062;
                 </a>
               </p>
