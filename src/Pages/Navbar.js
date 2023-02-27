@@ -1,13 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import "../App.css";
-import {
-  Navbar,
-  MobileNav,
-  Typography,
-  Button,
-  IconButton,
-} from "@material-tailwind/react";
+import {Navbar,MobileNav,Typography,Button,IconButton} from "@material-tailwind/react";
 import { Auth } from "../firebase-config";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 
