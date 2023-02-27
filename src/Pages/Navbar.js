@@ -38,7 +38,6 @@ function Nav() {
         >
           <span>Twieets</span>
         </Typography>
-
         <span>
           <Link to="/new">
             <button className="bg-blue-400 hover:bg-blue-500 rounded-full text-white font-bold py-2 px-4 mr-6 ">
