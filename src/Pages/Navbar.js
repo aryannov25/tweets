@@ -28,7 +28,7 @@ function Nav() {
   };
 
   return (
-    <Navbar className="mx-auto max-w-full  nav ">
+    <Navbar className="mx-auto max-w-full nav">
       <div className="container mx-auto flex items-center justify-around text-white">
         <Typography
           as="a"
