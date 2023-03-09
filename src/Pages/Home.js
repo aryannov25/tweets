@@ -60,7 +60,6 @@ function Home() {
               <h1 className="px-0 py-2 text-2xl font-bold text-white">
                 Hello {user.email}
               </h1>
-
               <h1 className="text-lg">Here are your tweets &#129303;</h1>
             </div>
           </div>
