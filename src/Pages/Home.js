@@ -63,7 +63,6 @@ function Home() {
               <h1 className="text-lg">Here are your tweets &#129303;</h1>
             </div>
           </div>
-
           <div className={loading ? "loading" : "d-none"}>
             {Array(1)
               .fill("")
