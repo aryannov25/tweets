@@ -24,7 +24,7 @@ function Home() {
 
   const navigate = useNavigate();
   const tweetInputRef = useRef();
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     onAuthStateChanged(Auth, (currentUser) => {

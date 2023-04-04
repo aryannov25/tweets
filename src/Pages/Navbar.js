@@ -36,7 +36,7 @@ function Nav() {
           variant="small"
           className="mr-4 cursor-pointer py-1.5 font-bold "
         >
-          <span>Twieets</span>
+          <span>Chirper</span>
         </Typography>
         <span>
           <Link to="/new">

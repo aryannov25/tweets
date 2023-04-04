@@ -61,19 +61,19 @@ function Tweets({ tweets, name }) {
     //             <h4 className="text-gray-400 ml-2 mt-1"> 💬 24 Comments</h4>
     //           </a>
     //         </div>
-    //         <button
-    //           onClick={() => {
-    //             deletDoc(meetings.tweet);
-    //           }}
-    //         >
-    //           Delete
-    //         </button>{" "}
+            // <button
+            //   onClick={() => {
+            //     deletDoc(meetings.tweet);
+            //   }}
+            // >
+            //   Delete
+            // </button>{" "}
     //       </div>
     //     </div>
     //   </div>
     // </div>
 
-    <div className="bg-zinc-800 rounded mt-3 p-1 mr-3 sm:content-left container">
+    <div className="bg-zinc-800 rounded mt-3 p-1 mr-3 sm:content-left container grid grid-col-reverse">
       <div className="p-4 bg-zinc-800">
         <div className="media bg-zinc-800 flex pb-1">
           <a className="mr-4 bg-zinc-800" href="#">
