@@ -34,7 +34,7 @@ function Nav() {
           as="a"
           href="home"
           variant="small"
-          className="mr-4 cursor-pointer py-1.5 font-bold "
+          className="mr-4 cursor-pointer py-1.5 font-extrabold text-xl"
         >
           <span>Chirper</span>
         </Typography>
