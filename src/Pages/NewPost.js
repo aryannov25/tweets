@@ -30,7 +30,7 @@ function Home() {
 
     //Post Tweets
     fetch(
-      "https://fir-auth-5ce51-default-rtdb.firebaseio.com/meetings.json",
+      "https://project-dd1f5-default-rtdb.firebaseio.com/meetings.json",
       {
         method: "POST",
         body: JSON.stringify(meetingData),
@@ -40,10 +40,6 @@ function Home() {
       navigate("/home", { replace: true });
     });
   }
-
-
-  
-
 
   return (
     <div className="bg">

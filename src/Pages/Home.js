@@ -6,15 +6,6 @@ import { Auth } from "../firebase-config";
 import { useState, useEffect } from "react";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import Tweets from "./Tweets";
-import moment from "moment";
-import useOnline from "./useOnline";
-
-// const Tweets = lazy(() => import("./Tweets"));
-
-// const isOnline = useOnline();
-// if (!isOnline) {
-//   return <h1>🔴 Offline, please check your internet connection!!</h1>;
-// }
 
 function Home() {
   const [user, setUser] = useState({});
@@ -33,7 +24,7 @@ function Home() {
   }, []);
 
   useEffect(() => {
-    fetch("https://fir-auth-5ce51-default-rtdb.firebaseio.com/meetings.json")
+    fetch("https://project-dd1f5-default-rtdb.firebaseio.com/meetings.json")
       .then((response) => response.json())
       .then((data) => {
         const meetings = [];
@@ -42,8 +33,8 @@ function Home() {
           meetings.push(meeting);
         }
         setMeetings(meetings);
-        const abc = meetings.toUppercase();
-        console.log(abc);
+        // const abc = meetings;
+        // console.log(abc);
         setLoading(false);
       });
   }, []);
