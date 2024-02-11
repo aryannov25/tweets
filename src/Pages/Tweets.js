@@ -1,42 +1,44 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React from "react";
 
-function Tweets({ tweets, name }) {
-  const navigate = useNavigate();
-
-  const [meetings, setMeetings] = useState([]);
-
+function Tweets({ tweet, name, onDelete, onModify }) {
   return (
-    <div className="bg-zinc-800 rounded mt-3 p-1 mr-3 sm:content-left container grid grid-col-reverse">
-      <div className="p-4 bg-zinc-800">
-        <div className="media bg-zinc-800 flex pb-1">
-          <a className="mr-4 bg-zinc-800" href="#">
+    <div className="bg-zinc-700 rounded-lg overflow-hidden shadow-lg my-5">
+      <div className="p-5 bg-zinc-700">
+        <div className="flex items-center bg-zinc-700 space-x-4">
+          <a href="#" className="block bg-zinc-700">
             <img
-              className="rounded-full max-w-none w-12 h-12"
+              className="rounded-full w-12 h-12 object-cover"
               src="https://randomuser.me/api/portraits/men/80.jpg"
+              alt="User avatar"
             />
           </a>
-          <div className="media-body bg-zinc-800">
-            <div className="bg-zinc-800">
+          <div className="flex-1 bg-zinc-700">
+            <div className="flex items-center justify-between bg-zinc-700">
               <a
-                className="inline-block text-base bg-zinc-800 font-bold mr-2"
                 href="#"
+                className="text-lg font-semibold bg-zinc-700 text-white hover:text-blue-400 transition-colors"
               >
                 {name}
               </a>
-              <span className="text-slate-500 dark:text-slate-300 bg-zinc-800">
-                25 minutes ago
-              </span>
+              <span className="text-sm text-slate-400 bg-zinc-700">25 minutes ago</span>
             </div>
-            <p className="bg-zinc-800">{tweets}</p>
-            <a href="#">
-              <h4 className="text-gray-400 bg-zinc-800 mt-1">
-                {" "}
-                💬 24 Comments
-              </h4>
-            </a>
+            <p className="text-white mt-3 bg-zinc-700">{tweet}</p>
           </div>
         </div>
+      </div>
+      <div className="px-5 py-3 bg-zinc-700 flex justify-between items-center">
+        <button
+          onClick={onDelete}
+          className="bg-red-600 hover:bg-red-700 transition-colors text-white py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50"
+        >
+          Delete
+        </button>
+        <button
+          onClick={onModify}
+          className="bg-blue-600 hover:bg-blue-700 transition-colors text-white py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+        >
+          Modify
+        </button>
       </div>
     </div>
   );
